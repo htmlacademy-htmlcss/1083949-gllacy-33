@@ -1462,10 +1462,33 @@ body {
   color: var(--color-extra-dark);
 }
 
-.footer-copyright-link {
+.footer-copyright-text .footer-copyright-link {
   color: var(--color-extra-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-extra-dark);
 }
 
+/* Модальное окно */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background-color);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background-color: var(--color-extra-light);
+}
 
 /* Каталог */
 
@@ -1571,6 +1594,15 @@ body {
   cursor: pointer;
 }
 
+.select-sorting:hover {
+  background-color: var(--color-background-color-opacity);
+}
+
+.select-sorting:focus {
+  background-color: var(--color-border-light);
+  outline: 2px solid var(--color-extra-light);
+}
+
 .price-field {
   width: 40px;
   padding: 0 2px;
@@ -1624,7 +1656,6 @@ body {
 }
 
 .range-toggle {
-  position: absolute;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -1651,10 +1682,6 @@ body {
 .range-toggle:hover {
   background-color: var(--color-dark);
 }
-
-/* .range-toggle:focus {
-  outline: 3px solid var(--color-extra-dark);
-} */
 
 .toggle-min {
   top: -8px;
@@ -1711,15 +1738,8 @@ body {
   cursor: pointer;
 }
 
-/* C состояниями чт-то не так */
-
 .control:hover .control-mark {
   border-color: var(--color-extra-light);
-}
-
-.control-field:focus ~ .control-mark,
-.control-field:active ~ .control-mark {
-  border-color: var(--color-dark);
 }
 
 .control-field:disabled + .control-mark,
@@ -1830,15 +1850,12 @@ body {
 }
 
 .catalog-pagination {
-  /* display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 20px; */
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  padding: 41px 0 91px 0;
+  padding: 41px 0 72px 0;
   border-bottom: 1px solid var(--color-background-color);
 }
 
@@ -1864,18 +1881,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 16px 0;
+  margin: 8px 0 16px 0;
   padding-left: 40px;
   list-style-type: none;
   text-align: center;
 }
 
-.catalog-pagination-item:first-child > .catalog-pagination-link {
-  background-color: transparent;
-}
-
 .catalog-pagination-link {
-  /* margin-top: 8px; */
   padding: 2px 8px;
   display: block;
   text-align: center;
@@ -1886,18 +1898,27 @@ body {
   text-decoration: none;
 }
 
+.catalog-pagination-item:nth-last-child(2) .catalog-pagination-link {
+  margin-right: 8px;
+}
+
 .catalog-pagination-active {
+  margin-left: 12px;
   text-align: center;
   vertical-align: middle;
   background-color: var(--color-extra-light);
   border-radius: 50px;
+  cursor: default;
 }
 
 .catalog-pagination-link:hover {
   box-sizing: border-box;
   background-color: var(--color-background-color);
   border-radius: 26px;
-  box-shadow: 0 0 0 1px var(--color-extra-light);
+}
+
+.catalog-pagination-active:hover {
+  background-color: var(--color-extra-light);
 }
 
 .catalog-pagination-link:focus {
@@ -1915,21 +1936,37 @@ body {
   border-radius: 26px;
 }
 
+.pagination-link-disabled,
+.pagination-link-disabled:hover  {
+  background-color: transparent;
+  opacity: 0.2;
+  cursor: default;
+  box-shadow: none;
+}
+
 .catalog-pagination-icon {
-  margin-top: 5px;
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
 }
 
 .pagination-prev {
-  width: 16px;
-  height: 16px;
-  opacity: 0.2;
-  padding: 4px 16px 4px 0;
+  padding-left: 0;
 }
 
 .pagination-next {
-  width: 16px;
-  height: 16px;
-  padding: 4px 0 4px 20px;
+  padding-right: 0;
+  padding-left: 8px;
 }
+
+.pagination-prev:hover,
+.pagination-next:hover,
+.pagination-prev:focus,
+.pagination-next:focus,
+.pagination-prev:active,
+.pagination-next:active {
+  background-color: transparent;
+}
+
 
 

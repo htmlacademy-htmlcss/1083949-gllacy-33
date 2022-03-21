@@ -344,6 +344,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="socials-item">
               <a class="footer-socials-link socials-link" href="https://www.facebook.com/htmlacademy">
                 <svg class="socials-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -351,6 +352,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="socials-item">
               <a class="footer-socials-link socials-link" href="https://wwww.instagram.com/htmlacademy">
                 <svg class="socials-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,27 +365,61 @@
             <li class="footer-menu-item">
               <a class="footer-menu-link" href="#"><strong class="footer-menu-strong">Для поставщиков</strong></a>
             </li>
+
             <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">Наши документы</a>
             </li>
+
             <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">О производстве</a>
             </li>
+
             <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">Экологические стандарты</a>
             </li>
           </ul>
+
           <ul class="footer-copyright-list">
             <li class="footer-copyright-item">
               <a class="footer-copyright-link" href="https://htmlacademy.ru">
                 <img class="footer-copyright-img" src="/images/logo_htmlacademy.svg" width="93" height="26" alt="Логотип htmlacademy.">
               </a>
             </li>
+
             <li class="footer-copyright-item">
               <p class="footer-copyright-text">Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
             </li>
           </ul>
         </div>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="visually-hidden">Форма обратной связи.</h2>
+            <p class="modal-caption">Мы обязательно ответим вам!</p>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+                <label class="visually-hidden" for="name">Имя и фамилия.</label>
+                <input class="modal-form-field field" type="text" id="name" name="name" placeholder="Имя и фамилия">
+              </p>
+
+              <p class="field-group">
+                <label class="visually-hidden" for="e-mail">Ваш e-mail.</label>
+                <input class="modal-form-field field" type="email" id="e-mail" name="e-mail" placeholder="email@example.com">
+              </p>
+
+              <p class="field-group">
+                <label class="visually-hidden" for="e-mail">Текст..</label>
+                <input class="modal-form-field field" type="text" id="text" name="text" placeholder="В свободной форме">
+              </p>
+              <button class="modal-button button-bright">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
