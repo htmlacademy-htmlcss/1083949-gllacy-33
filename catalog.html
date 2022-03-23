@@ -195,14 +195,9 @@
           </ul>
         </nav>
       </header>
-
-      <!--Главная страница каталога-->
       <main class="catalog-page main-container">
-        <!--Блок каталога с фильтром-->
-
         <section class="filter">
           <h2 class="visually-hidden">Фильтры.</h2>
-          <!--Хлебные крошки-->
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item breadcrumbs-item-chevrons">
               <a class="breadcrumbs-link breadcrumbs-link-decoration" href="index.html">Главная</a>
@@ -218,8 +213,6 @@
             </li>
           </ul>
           <h3 class="breadcrumbs-title">Сливочное мороженое</h3>
-
-          <!--Фильтр-->
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter select-sorting-group">
               <legend class="filter-title">Сортировка:</legend>
@@ -229,8 +222,6 @@
                 <option value="select-value">сначала дорогие</option>
               </select>
             </fieldset>
-
-
             <fieldset class="filter sorting-price-group">
               <legend class="filter-title">Цена: 100 ₽ – 500 ₽</legend>
                 <div class="range-wrapper-inputs">
@@ -241,21 +232,19 @@
                   <input class="price-field" type="hidden" value="500">
                   </label>
                 </div>
-
-              <div class="range">
-                <div class="range-scale">
-                  <div class="range-bar"  style="left: 34px; width: 70px">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar"  style="left: 34px; width: 70px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
             </fieldset>
-
             <fieldset class="filter sorting-radio-group">
               <legend class="filter-title">Жирность:</legend>
                 <ul class="filter-list">
@@ -266,7 +255,6 @@
                       <span class="control-label">0%</span>
                     </label>
                   </li>
-
                   <li class="filter-item">
                     <label class="control">
                       <input class="visually-hidden control-field" type="radio" value="до 10%" checked>
@@ -274,7 +262,6 @@
                       <span class="control-label">до 10%</span>
                     </label>
                   </li>
-
                   <li class="filter-item">
                     <label class="control">
                       <input class="visually-hidden control-field" type="radio" value="до 30%">
@@ -282,7 +269,6 @@
                       <span class="control-label">до 30%</span>
                     </label>
                   </li>
-
                   <li class="filter-item">
                     <label class="control">
                       <input class="visually-hidden control-field" type="radio" value="выше 30%">
@@ -299,22 +285,18 @@
                     <input class="sorting-filler-field" type="checkbox" name="chokolate" id="chokolate" checked>
                     <label class="sorting-filler-label" for="chokolate">шоколадные</label>
                   </li>
-
                   <li class="filter-item-sorting">
                     <input class="sorting-filler-field" type="checkbox" name="sugar-sprinkles" id="sugar-sprinkles" checked>
                     <label class="sorting-filler-label" for="sugar-sprinkles">сахарные посыпки</label>
                   </li>
-
                   <li class="filter-item-sorting">
                     <input class="sorting-filler-field" type="checkbox" name="fruit" id="fruit">
                     <label class="sorting-filler-label" for="fruit">фрукты</label>
                   </li>
-
                   <li class="filter-item-sorting">
                     <input class="sorting-filler-field" type="checkbox" name="syrups" id="syrups">
                     <label class="sorting-filler-label" for="syrups">сиропы</label>
                   </li>
-
                   <li class="filter-item-sorting">
                     <input class="sorting-filler-field" type="checkbox" name="jams" id="jams">
                     <label class="sorting-filler-label" for="jams">джемы</label>
@@ -324,7 +306,6 @@
             <button class="sorting-button" type="submit">Применить</button>
           </form>
         </section>
-        <!--Каталог товаров-->
         <section class="catalog-product">
           <h2 class="visually-hidden">Каталог.</h2>
           <ul class="catalog-list">
@@ -340,7 +321,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/pistachio-ball.png" width="168" height="168" alt="Шарик фисташкового мороженого.">
               <h3 class="catalog-item-caption">Фисташка</h3>
@@ -353,7 +333,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/blueberry-ball.png" width="168" height="168" alt="Шарик черничного мороженого.">
               <h3 class="catalog-item-caption">Черника</h3>
@@ -366,7 +345,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/bubble-ball.png" width="168" height="168" alt="Шарик ванильного мороженого с посыпкой.">
               <h3 class="catalog-item-caption">Бабл-гам</h3>
@@ -379,7 +357,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/blackberry-ball.png" width="168" height="168" alt="Сливочное мороженое с ежевичным джемом.">
               <h3 class="catalog-item-caption">Ежевика</h3>
@@ -392,7 +369,6 @@
               </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/banana-ball.png" width="168" height="168" alt="Шарик бананового мороженого.">
               <h3 class="catalog-item-caption">Банан</h3>
@@ -405,7 +381,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/chokolate-ball.png" width="168" height="168" alt="Шарик шоколадного мороженого.">
               <h3 class="catalog-item-caption">Шоколадка</h3>
@@ -418,7 +393,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/strawberry-ball.png" width="168" height="168" alt="Шарик клубничного мороженого.">
               <h3 class="catalog-item-caption">Клубничка</h3>
@@ -431,7 +405,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/lemon-ball.png" width="168" height="168" alt="Шарик лимонного мороженого.">
               <h3 class="catalog-item-caption">Лимон</h3>
@@ -444,7 +417,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/menthol-ball.png" width="168" height="168" alt="Шарик ментолового мороженого голубого цвета.">
               <h3 class="catalog-item-caption">Ментол</h3>
@@ -457,7 +429,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/nut-ball.png" width="168" height="168" alt="Шарик фисташкового мороженого с шоколадным сиропом.">
               <h3 class="catalog-item-caption">Орешек</h3>
@@ -470,7 +441,6 @@
                 </button>
               </div>
             </li>
-
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/creme-brulle-ball.png" width="168" height="168" alt="Шарик классического мороженого крем-брюле.">
               <h3 class="catalog-item-caption">Крем-брюле</h3>
@@ -485,7 +455,6 @@
             </li>
           </ul>
         </section>
-
         <div class="catalog-pagination">
           <button class="pagination-show-more button-white" type="button">Показать ещё</button>
           <ul class="catalog-pagination-list">
@@ -519,7 +488,6 @@
           </ul>
         </div>
       </main>
-      <!--Подвал-->
       <footer class="page-footer">
         <div class="page-footer-container">
           <ul class="socials-list footer-socials-list">
