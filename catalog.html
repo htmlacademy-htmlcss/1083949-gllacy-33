@@ -16,6 +16,25 @@
           <ul class="main-nav-list">
             <li class="main-nav-item">
               <a class="main-nav-link" href="#">Каталог</a>
+              <div class="popover-catalog">
+                <div class="popover-content">
+                  <h2 class="popover-caption">Новинки</h2>
+                  <ul class="popover-catalog-list">
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="main-nav-item">
               <a class="main-nav-link" href="#">Доставка и оплата</a>
@@ -34,18 +53,138 @@
               <a class="user-nav-link user-nav-search" href="#">
                 <span class="visually-hidden">Поиск.</span>
               </a>
+              <div class="popover-search">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Поиск.</h2>
+                  <form action="https://echo.htmlacademy.ru" method="post">
+                    <label class="search-label">
+                      <input class="form-search" type="text" placeholder="Поиск по сайту">
+                    </label>
+                    <button type="button" class="search-delete-button">
+                      <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z" fill="#2D3440"/></svg>
+                      <span class="visually-hidden">Очистить.</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="user-nav-item">
               <a class="user-nav-link user-nav-login" href="#">
                 <span class="visually-hidden">Личный кабинет.</span>
                 Вход
               </a>
+              <div class="popover-login">
+                <div class="popover-content">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <form action="https://echo.htmlacademy.ru" method="post">
+                    <label class="login-label">
+                      <input class="form-login" type="email" placeholder="email@example.com" required>
+                    </label>
+                    <label class="login-label">
+                      <input class="form-login" type="password" value="Плейсх" required>
+                    </label>
+                    <div class="login-wrapper">
+                      <button class="button-login button-bright"  type="submit">
+                        Войти
+                      </button>
+                      <ul class="login-list">
+                        <a class="login-password" href="#">Забыли пароль?</a>
+                        <a class="login-registration" href="#">Регистрация</a>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
-            <li class="user-nav-item">
+            <li class="user-nav-item user-nav-basket-two">
               <a class="user-nav-link user-nav-basket" href="#">
                 <span class="visually-hidden">Корзина.</span>
                 2 товара
               </a>
+              <div class="popover-basket">
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="basket-items-list">
+                    <li class="basket-item">
+                      <a class="basket-link" href="#">
+                        <img class="basket-img" src="/images/catalog/rasberry-ball.png" width="46px" height="46px" alt="Шарик малинового мороженого.">
+                        <div class="basket-item-wrapper">
+                          <p class="basket-item-title">Малинка</p>
+                          <p class="basket-item-price">1 кг х 310 ₽</p>
+                        </div>
+                        <p class="basket-item-amount">310 ₽</p>
+                      </a>
+                      <button type="button" class="basket-delete-button">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z" fill="#2D3440"/></svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                    <li class="basket-item">
+                      <a class="basket-link" href="#">
+                        <img class="basket-img" src="/images/catalog/bubble-ball.png" width="46px" height="46px" alt="Шарик ванильного мороженого голубого цвета.">
+                        <div class="basket-item-wrapper">
+                          <p class="basket-item-title">Бабл-гам</p>
+                          <p class="basket-item-price">1,5 кг х 320 ₽</p>
+                        </div>
+                        <p class="basket-item-amount">320 ₽</p>
+                      </a>
+                      <button type="button" class="basket-delete-button">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z" fill="#2D3440"/></svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="basket-footer">
+                    <a class="basket-footer-button button-bright">Оформить заказ</a>
+                    <p class="basket-footer-total">Итого: 790 ₽</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="user-nav-item user-nav-basket-hundred">
+              <a class="user-nav-link user-nav-basket" href="#">
+                <span class="visually-hidden">Корзина.</span>
+                100 товаров
+              </a>
+              <div class="popover-basket">
+                <div class="popover-content">
+                  <h2 class="popver-basket-title">Корзина</h2>
+                  <ul class="basket-items-list">
+                    <li class="basket-item">
+                      <a class="basket-link" href="#">
+                        <img class="basket-img" src="/images/catalog/rasberry-ball.png" width="46px" height="46px" alt="Шарик малинового мороженого.">
+                        <div class="basket-item-wrapper">
+                          <p class="basket-item-title">Малинка</p>
+                          <p class="basket-item-price">1 кг х 310 ₽</p>
+                        </div>
+                        <p class="basket-item-amount">310 ₽</p>
+                      </a>
+                      <button type="button" class="basket-delete-button">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z" fill="#2D3440"/></svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                    <li class="basket-item">
+                      <a class="basket-link" href="#">
+                        <img class="basket-img" src="/images/catalog/bubble-ball.png" width="46px" height="46px" alt="Шарик ванильного мороженого голубого цвета.">
+                        <div class="basket-item-wrapper">
+                          <p class="basket-item-title">Бабл-гам</p>
+                          <p class="basket-item-price">1,5 кг х 320 ₽</p>
+                        </div>
+                        <p class="basket-item-amount">320 ₽</p>
+                      </a>
+                      <button type="button" class="basket-delete-button">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z" fill="#2D3440"/></svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="basket-footer">
+                    <a class="basket-footer-button button-bright">Оформить заказ</a>
+                    <p class="basket-footer-total">Итого: 790 ₽</p>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -88,12 +227,12 @@
 
             <fieldset class="filter sorting-price-group">
               <div class="range-wrapper-inputs">
-                <legend class="filter-title">Цена:</legend>
+                <legend class="filter-title">Цена: 100 ₽ – 500 ₽</legend>
                   <label class="price-label">
-                    <input class="price-field" type="number" value="100">₽
+                    <input class="price-field" type="hidden" value="100">
                   </label>
                   <label class="price-label">
-                    <input class="price-field" type="number" value="500">₽
+                    <input class="price-field" type="hidden" value="500">
                   </label>
               </div>
 
