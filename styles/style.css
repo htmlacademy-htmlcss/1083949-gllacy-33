@@ -2022,6 +2022,7 @@ body {
 }
 
 .modal-button {
+  word-break: break-all;
   margin: 16px 0 2px auto;
 }
 
