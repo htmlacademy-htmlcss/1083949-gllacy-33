@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <title>HTML Academy: Gllacy Shop</title>
   </head>
   <body>
     <div class="page-container">
+      <h1 class="visually-hidden">Gllacy Shop.</h1>
       <!--Главная навигация-->
       <header class="main-header">
         <nav class="main-nav">
@@ -90,7 +92,6 @@
                 <div class="popover-content">
                   <h2 class="visually-hidden">Корзина.</h2>
                   <p class="basket-zero">Ваша корзина<br> пока пуста</p>
-                  </form>
                 </div>
               </div>
             </li>
@@ -99,9 +100,6 @@
       </header>
 
       <main class="main-page main-container">
-        <h1 class="visually-hidden">Gllacy Shop.</h1>
-
-        <!--Рекламный блок-->
         <section class="promo">
           <h2 class="visually-hidden">Рекламный блок.</h2>
           <ul class="promo-list">
@@ -121,10 +119,10 @@
               </span>
 
               <div class="promo-wrapper">
-                <h3 class="promo-caption">Нежный пломбир с&nbspклубничным джемом</h3>
-                <p class="promo-text">Натуральное мороженое из свежих сливок и&nbspмолока с вкуснейшим клубничным джемом<br> – это идеальный десерт для всей семьи.</p>
+                <h3 class="promo-caption">Нежный пломбир с&nbsp;клубничным джемом</h3>
+                <p class="promo-text">Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом<br> – это идеальный десерт для всей семьи.</p>
                 <div class="promo-link-wrapper">
-                  <a class="button-white" href="#">Заказать</a>
+                  <a class="button-white promo-button" href="#">Заказать</a>
                 </div>
               </div>
             </li>
@@ -172,7 +170,6 @@
               </ul>
             </div>
 
-            <!--Ссылки на соц.сети-->
             <ul class="socials-list">
               <li class="socials-item">
                 <a class="socials-link socials-link-vk" href="https://vk.com/htmlacademy">
@@ -217,7 +214,7 @@
             <li class="banner-item">
               <h3 class="banner-item-caption">Маршмеллоу даром!</h3>
               <img class="banner-item-img img-column-2" src="/images/marshmallow.png" width="232" height="359" alt="Рожок с зефирками">
-              <p class="banner-item-text">При покупке 2 кг пломбира добавим в&nbspваш заказ упаковку нежных <br>зефирок совершенно бесплатно.</p>
+              <p class="banner-item-text">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных <br>зефирок совершенно бесплатно.</p>
               <div class="button-wrapper">
                 <a class="button-white banner-item-link">Хочу подарок</a>
             </div>
@@ -227,7 +224,7 @@
 
         <!--Популярные товары-->
         <section class="popular">
-          <h2 class="catalog-title">Попробуйте самые&nbspпопулярные вкусы нашего мороженого</h2>
+          <h2 class="catalog-title">Попробуйте самые&nbsp;популярные вкусы нашего мороженого</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <img class="catalog-item-img" src="/images/catalog/rasberry-ball.png" width="168" height="168" alt="Шарик малинового мороженого.">
@@ -258,7 +255,7 @@
             <li class="catalog-item">
               <img class="catalog-item-img" src="/images/catalog/blueberry-ball.png" width="168" height="168" alt="Шарик черничного мороженого.">
               <h3 class="catalog-item-caption">Черника</h3>
-              <p class="catalog-item-text">Крем-брюле с&nbspчерничным джемом</p>
+              <p class="catalog-item-text">Крем-брюле с&nbsp;черничным джемом</p>
               <div class="catalog-wrapper">
                 <span class="catalog-item-price">330 ₽/кг</span>
                 <button class="button-basket" type="button">
@@ -271,7 +268,7 @@
             <li class="catalog-item">
               <img class="catalog-item-img" src="/images/catalog/bubble-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
               <h3 class="catalog-item-caption">Бабл-гам</h3>
-              <p class="catalog-item-text">Ванильный пломбир со&nbspсладкой посыпкой</p>
+              <p class="catalog-item-text">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <div class="catalog-wrapper">
                 <span class="catalog-item-price">320 ₽/кг</span>
                 <button class="button-basket" type="button">
@@ -354,10 +351,10 @@
               <p class="field-group">
                 <label class="delivery-label-date" for="delivery-date">Дата</label>
                 <span class="tooltip-data">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-data">
                     <svg class="tooltip-icon" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 0 0 0 1.33.67.67 0 0 0 0-1.33Z" fill="#2D3440"/></svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-data">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</span>
                 </span>
                 <input class="delivery-date-field delivery-field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
               </p>
@@ -368,10 +365,10 @@
               <p class="field-group field-group-adress">
                 <label class="delivery-label-adress">Адрес</label>
                 <span class="tooltip-adress">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-adress">
                     <svg class="tooltip-icon" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 0 0 0 1.33.67.67 0 0 0 0-1.33Z" fill="#2D3440"/></svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-adress">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</span>
                 </span>
                 <input class="delivery-adress-field delivery-field" type="text" name="delivery-adress" id="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
               </p>

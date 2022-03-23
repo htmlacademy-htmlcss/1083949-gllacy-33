@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <title>HTML Academy: Gllacy Shop</title>
   </head>
   <body>
     <div class="page-container">
+      <h1 class="visually-hidden">Каталог магазина Gllacy Shop</h1>
       <header class="main-header">
         <nav class="main-nav">
           <a class="main-nav-logo logo" href="https://htmlacademy.ru">
@@ -88,8 +90,12 @@
                         Войти
                       </button>
                       <ul class="login-list">
-                        <a class="login-password" href="#">Забыли пароль?</a>
-                        <a class="login-registration" href="#">Регистрация</a>
+                        <li class="popover-catalog-item">
+                          <a class="login-password" href="#">Забыли пароль?</a>
+                        </li>
+                        <li class="popover-catalog-item">
+                          <a class="login-registration" href="#">Регистрация</a>
+                        </li>
                       </ul>
                     </div>
                   </form>
@@ -107,7 +113,7 @@
                   <ul class="basket-items-list">
                     <li class="basket-item">
                       <a class="basket-link" href="#">
-                        <img class="basket-img" src="/images/catalog/rasberry-ball.png" width="46px" height="46px" alt="Шарик малинового мороженого.">
+                        <img class="basket-img" src="/images/catalog/rasberry-ball.png" width="46" height="46" alt="Шарик малинового мороженого.">
                         <div class="basket-item-wrapper">
                           <p class="basket-item-title">Малинка</p>
                           <p class="basket-item-price">1 кг х 310 ₽</p>
@@ -121,7 +127,7 @@
                     </li>
                     <li class="basket-item">
                       <a class="basket-link" href="#">
-                        <img class="basket-img" src="/images/catalog/bubble-ball.png" width="46px" height="46px" alt="Шарик ванильного мороженого голубого цвета.">
+                        <img class="basket-img" src="/images/catalog/bubble-ball.png" width="46" height="46" alt="Шарик ванильного мороженого голубого цвета.">
                         <div class="basket-item-wrapper">
                           <p class="basket-item-title">Бабл-гам</p>
                           <p class="basket-item-price">1,5 кг х 320 ₽</p>
@@ -152,7 +158,7 @@
                   <ul class="basket-items-list">
                     <li class="basket-item">
                       <a class="basket-link" href="#">
-                        <img class="basket-img" src="/images/catalog/rasberry-ball.png" width="46px" height="46px" alt="Шарик малинового мороженого.">
+                        <img class="basket-img" src="/images/catalog/rasberry-ball.png" width="46" height="46" alt="Шарик малинового мороженого.">
                         <div class="basket-item-wrapper">
                           <p class="basket-item-title">Малинка</p>
                           <p class="basket-item-price">1 кг х 310 ₽</p>
@@ -166,7 +172,7 @@
                     </li>
                     <li class="basket-item">
                       <a class="basket-link" href="#">
-                        <img class="basket-img" src="/images/catalog/bubble-ball.png" width="46px" height="46px" alt="Шарик ванильного мороженого голубого цвета.">
+                        <img class="basket-img" src="/images/catalog/bubble-ball.png" width="46" height="46" alt="Шарик ванильного мороженого голубого цвета.">
                         <div class="basket-item-wrapper">
                           <p class="basket-item-title">Бабл-гам</p>
                           <p class="basket-item-price">1,5 кг х 320 ₽</p>
@@ -192,7 +198,6 @@
 
       <!--Главная страница каталога-->
       <main class="catalog-page main-container">
-        <h1 class="visually-hidden">Каталог магазина Gllacy Shop</h1>
         <!--Блок каталога с фильтром-->
 
         <section class="filter">
@@ -225,16 +230,17 @@
               </select>
             </fieldset>
 
+
             <fieldset class="filter sorting-price-group">
-              <div class="range-wrapper-inputs">
-                <legend class="filter-title">Цена: 100 ₽ – 500 ₽</legend>
+              <legend class="filter-title">Цена: 100 ₽ – 500 ₽</legend>
+                <div class="range-wrapper-inputs">
                   <label class="price-label">
                     <input class="price-field" type="hidden" value="100">
                   </label>
                   <label class="price-label">
-                    <input class="price-field" type="hidden" value="500">
+                  <input class="price-field" type="hidden" value="500">
                   </label>
-              </div>
+                </div>
 
               <div class="range">
                 <div class="range-scale">
@@ -315,7 +321,7 @@
                   </li>
                 </ul>
             </fieldset>
-            <button class="sorting-button button-bright" type="submit">Применить</button>
+            <button class="sorting-button" type="submit">Применить</button>
           </form>
         </section>
         <!--Каталог товаров-->
@@ -351,7 +357,7 @@
             <li class="catalog-item">
               <img class="catalog-item-img" src="../images/catalog/blueberry-ball.png" width="168" height="168" alt="Шарик черничного мороженого.">
               <h3 class="catalog-item-caption">Черника</h3>
-              <p class="catalog-item-text">Крем-брюле с&nbspчерничным джемом</p>
+              <p class="catalog-item-text">Крем-брюле с&nbsp;черничным джемом</p>
               <div class="catalog-wrapper">
                 <span class="catalog-item-price">330 ₽/кг</span>
                 <button class="button-basket" type="button">
@@ -362,9 +368,9 @@
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/bubble-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/bubble-ball.png" width="168" height="168" alt="Шарик ванильного мороженого с посыпкой.">
               <h3 class="catalog-item-caption">Бабл-гам</h3>
-              <p class="catalog-item-text">Ванильный пломбир со&nbspсладкой посыпкой</p>
+              <p class="catalog-item-text">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <div class="catalog-wrapper">
                 <span class="catalog-item-price">320 ₽/кг</span>
                 <button class="button-basket" type="button">
@@ -384,12 +390,13 @@
                 <span class="visually-hidden">Купить.</span>
                 <svg class="button-basket-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/></svg>
               </button>
+              </div>
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/banana-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/banana-ball.png" width="168" height="168" alt="Шарик бананового мороженого.">
               <h3 class="catalog-item-caption">Банан</h3>
-              <p class="catalog-item-text">Сливочный пломбир с&nbspбанановым вкусом</p>
+              <p class="catalog-item-text">Сливочный пломбир с&nbsp;банановым вкусом</p>
               <div class="catalog-wrapper">
                 <span class="catalog-item-price">340 ₽/кг</span>
                 <button class="button-basket" type="button">
@@ -400,7 +407,7 @@
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/chokolate-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/chokolate-ball.png" width="168" height="168" alt="Шарик шоколадного мороженого.">
               <h3 class="catalog-item-caption">Шоколадка</h3>
               <p class="catalog-item-text">Классический шоколадный пломбир</p>
               <div class="catalog-wrapper">
@@ -413,9 +420,9 @@
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/strawberry-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/strawberry-ball.png" width="168" height="168" alt="Шарик клубничного мороженого.">
               <h3 class="catalog-item-caption">Клубничка</h3>
-              <p class="catalog-item-text">Сливочный пломбир с&nbspклубничным вкусом</p>
+              <p class="catalog-item-text">Сливочный пломбир с&nbsp;клубничным вкусом</p>
               <div class="catalog-wrapper">
                 <span class="catalog-item-price">300 ₽/кг</span>
                 <button class="button-basket" type="button">
@@ -426,7 +433,7 @@
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/lemon-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/lemon-ball.png" width="168" height="168" alt="Шарик лимонного мороженого.">
               <h3 class="catalog-item-caption">Лимон</h3>
               <p class="catalog-item-text">Освежающий лимонный сорбет</p>
               <div class="catalog-wrapper">
@@ -439,9 +446,9 @@
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/menthol-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/menthol-ball.png" width="168" height="168" alt="Шарик ментолового мороженого голубого цвета.">
               <h3 class="catalog-item-caption">Ментол</h3>
-              <p class="catalog-item-text">Сливочный пломбир с&nbspментоловым сиропом</p>
+              <p class="catalog-item-text">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
               <div class="catalog-wrapper">
                 <span class="catalog-item-price">320 ₽/кг</span>
                 <button class="button-basket" type="button">
@@ -452,7 +459,7 @@
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/nut-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/nut-ball.png" width="168" height="168" alt="Шарик фисташкового мороженого с шоколадным сиропом.">
               <h3 class="catalog-item-caption">Орешек</h3>
               <p class="catalog-item-text">Фисташковый пломбир с шоколадным сиропом</p>
               <div class="catalog-wrapper">
@@ -465,7 +472,7 @@
             </li>
 
             <li class="catalog-item">
-              <img class="catalog-item-img" src="../images/catalog/creme-brulle-ball.png" width="168" height="168" alt="Шарик ванильного мороженого голубого цвета.">
+              <img class="catalog-item-img" src="../images/catalog/creme-brulle-ball.png" width="168" height="168" alt="Шарик классического мороженого крем-брюле.">
               <h3 class="catalog-item-caption">Крем-брюле</h3>
               <p class="catalog-item-text">Классическое<br> крем-брюле</p>
               <div class="catalog-wrapper">
