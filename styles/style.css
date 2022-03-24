@@ -159,13 +159,6 @@ body {
   text-decoration: none;
 }
 
-.main-nav-link-active {
-  box-sizing: border-box;
-  background-color: var(--color-bright);
-  border-radius: 26px;
-  box-shadow: 0 0 0 2px var(--color-bright);
-}
-
 .main-nav-link:hover {
   box-sizing: border-box;
   background-color: var(--color-background-color-opacity);
@@ -185,6 +178,17 @@ body {
   border: none;
   background-color: var(--color-extra-light);
   border-radius: 26px;
+}
+
+.main-nav-link-active,
+.main-nav-link-active:hover,
+.main-nav-link-active:focus,
+.main-nav-link-active:active {
+  color: var(--color-extra-light);
+  box-sizing: border-box;
+  background-color: var(--color-bright);
+  border-radius: 26px;
+  box-shadow: 0 0 0 2px var(--color-bright);
 }
 
 .popover-catalog {
