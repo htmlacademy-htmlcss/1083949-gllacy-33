@@ -1,80 +1,50 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('Inter-ExtraBold.woff2') format('woff2'),
-       url('Inter-ExtraBold.woff') format('woff');
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+       url("../fonts/Inter-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('Inter-SemiBold.woff2') format('woff2'),
-       url('Inter-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('Inter-Regular.woff2') format('woff2'),
-       url('Inter-Regular.woff') format('woff');
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+       url("../fonts/Inter-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('Inter-Black.woff2') format('woff2'),
-       url('Inter-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('Inter-Medium.woff2') format('woff2'),
-       url('Inter-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('Inter-Light.woff2') format('woff2'),
-       url('Inter-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('Inter-Thin.woff2') format('woff2'),
-       url('Inter-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('Inter-ExtraLight.woff2') format('woff2'),
-       url('Inter-ExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('Inter-Bold.woff2') format('woff2'),
-       url('Inter-Bold.woff') format('woff');
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+       url("../fonts/Inter-Bold.woff") format("woff");
   font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts//inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -187,6 +157,13 @@ body {
   line-height: 20px;
   color: var(--color-extra-dark);
   text-decoration: none;
+}
+
+.main-nav-link-active {
+  box-sizing: border-box;
+  background-color: var(--color-bright);
+  border-radius: 26px;
+  box-shadow: 0 0 0 2px var(--color-bright);
 }
 
 .main-nav-link:hover {
@@ -1808,6 +1785,7 @@ body {
   width: 1170px;
   margin: 0 auto;
   padding: 48px 0;
+  box-sizing: border-box;
 }
 
 .footer-socials-list {
@@ -1863,7 +1841,7 @@ body {
 }
 
 .footer-menu-link {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1883,7 +1861,14 @@ body {
   list-style: none;
 }
 
+.footer-copyright-img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 .footer-copyright-text {
+  padding: 0;
   margin-bottom: 0;
   font-size: 12px;
   font-weight: 400;
@@ -1894,6 +1879,7 @@ body {
 .footer-copyright-text .footer-copyright-link {
   color: var(--color-extra-dark);
   text-decoration: none;
+  border: none;
   border-bottom: 1px solid var(--color-extra-dark);
 }
 
@@ -2110,11 +2096,11 @@ body {
 }
 
 .select-sorting {
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
   position: relative;
   min-width: 196px;
-  padding: 8px 16px;
+  padding: 8px 14px;
   background-color: var(--color-background-color);
   -webkit-appearance: none;
   appearance: none;
@@ -2216,7 +2202,7 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--color-background-color);
   border-radius: 26px;
